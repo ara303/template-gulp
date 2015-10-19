@@ -1,0 +1,4 @@
+source: src
+destination: dist
+keep_files: [js, css, img]
+exclude: [js, css, scss, img]
