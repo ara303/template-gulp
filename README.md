@@ -1,0 +1,18 @@
+# template-gulp
+This is a template Gulp.js workflow with all the file structure and stuff you need to get started with Gulp.js and a number of it's plugins. This uses SCSS with Autoprefixer, concat and minify JS, BrowserSync for automatic page refreshing, and Jekyll for generating a static site or blog.
+
+## How to install
+
+Download (https://github.com/edadams/template-gulp/releases)[the latest release] (or fork this repo)
+
+From where you put the files, install dependencies: 
+    npm install gulp-sass gulp-autoprefixer gulp-imagemin imagemin-pngquant gulp-concat gulp-uglify browser-sync --save-dev 
+
+From that same location, run:
+    gulp
+    
+## Dependencies
+
+- Node.js
+- npm
+- Gulp.js
