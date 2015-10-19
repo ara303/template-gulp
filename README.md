@@ -3,7 +3,7 @@ This is a template Gulp.js workflow with all the file structure and stuff you ne
 
 ## How to install
 
-Download (https://github.com/edadams/template-gulp/releases)[the latest release] (or fork this repo)
+Download (the latest release)[https://github.com/edadams/template-gulp/releases] (or fork this repo).
 
 From where you put the files, install dependencies: 
 
