@@ -6,9 +6,11 @@ This is a template Gulp.js workflow with all the file structure and stuff you ne
 Download (https://github.com/edadams/template-gulp/releases)[the latest release] (or fork this repo)
 
 From where you put the files, install dependencies: 
+
     npm install gulp-sass gulp-autoprefixer gulp-imagemin imagemin-pngquant gulp-concat gulp-uglify browser-sync --save-dev 
 
 From that same location, run:
+
     gulp
     
 ## Dependencies
