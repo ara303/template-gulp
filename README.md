@@ -1,5 +1,5 @@
 # template-gulp
-This is a template Gulp.js workflow with all the file structure and stuff you need to get started with Gulp.js and a number of it's plugins. This uses SCSS with Autoprefixer, concat and minify JS, BrowserSync for automatic page refreshing, and Jekyll for generating a static site or blog.
+This is a template (empty) Gulp.js workflow with all the file structure you need to get started with Gulp.js and a number of it's plugins. This uses SCSS with Autoprefixer, concat and minify JS, BrowserSync for automatic page refreshing, and Jekyll to generate a static site or blog.
 
 ## How to install
 
@@ -13,8 +13,10 @@ From that same location, run:
 
     gulp
     
-## Dependencies
+## Prerequisites
 
 - Node.js
 - npm
 - Gulp.js
+- Ruby
+- Jekyll
