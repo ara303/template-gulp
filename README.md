@@ -5,15 +5,29 @@ This is an empty template Gulp.js workflow with all the file structure you need 
     
 ## Prerequisites
 
-- Node.js
-- npm
-- Gulp.js
-- Ruby
-- Jekyll
+- [Node.js and npm](http://nodejs.org)
+- [Gulp.js](http://gulpjs.com)
 
-### File structure
+And if you want to run a static site (not required if you just want to process CSS/JS/images). 
 
-This is the required file structure, if you want to make it for yourself.
+- [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
+- [Jekyll](http://jekyllrb.com)
+
+## Installation
+
+Downloading [the latest release](https://github.com/edadams/template-gulp/releases) or forking this repo is the fastest way to get the required file structure. Pay special attention to `gulpfile.js`.
+
+From where you put the files, install dependencies by running: 
+
+    npm install gulp-sass gulp-autoprefixer gulp-imagemin imagemin-pngquant gulp-concat gulp-uglify browser-sync --save-dev 
+    
+## Usage
+
+Start the server by running (from your project's root):
+
+    gulp
+
+## Required file structure
 
     dist/
         css/
@@ -32,20 +46,8 @@ This is the required file structure, if you want to make it for yourself.
             example.png
         js/
             example1.js
-            example2.jps
+            example2.js
         scss/
             main.scss
     _config.yml
     gulpfile.js
-
-## How to install
-
-Download [the latest release](https://github.com/edadams/template-gulp/releases) to get the required file structure, or you can just fork this repo. Pay special attention to `gulpfile.js`.
-
-From whereever you put the files, install dependencies: 
-
-    npm install gulp-sass gulp-autoprefixer gulp-imagemin imagemin-pngquant gulp-concat gulp-uglify browser-sync --save-dev 
-
-That's it. To start running the server and work on the site, simply run:
-
-    gulp
