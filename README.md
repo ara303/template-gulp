@@ -42,7 +42,7 @@ From the project root, start the server by running:
 
     gulp
 
-You can also type `gulp serve`, but at the bottom 
+You could also type `gulp serve`, but there's no need because we alias the default gulp task (`gulp`) to run `serve` for us [at the bottom of gulpfile.js](https://github.com/edadams/template-gulp/blob/master/gulpfile.js#L83).
 
 
 ## Deploying 
