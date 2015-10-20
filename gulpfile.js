@@ -35,7 +35,7 @@ gulp.task('scripts', function(){
 });
 
 /**
- * Shout out to: https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/blob/master/gulpfile.js
+ * Remove this if you don't want to use Jekyll.
  */
 gulp.task('jekyll-build', function (done) {
   browserSync.notify('Jekyll running...');
@@ -43,10 +43,16 @@ gulp.task('jekyll-build', function (done) {
     .on('close', done);
 });
 
+/**
+ * Remove this if you don't want to use Jekyll.
+ */
 gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
     browserSync.reload();
 });
 
+/**
+ * Remove jekyll-build from the array below if you don't want to use Jekyll.
+ */
 gulp.task('serve', ['jekyll-build', 'styles', 'images', 'scripts'], function(){
   browserSync({
     server: {
@@ -54,6 +60,9 @@ gulp.task('serve', ['jekyll-build', 'styles', 'images', 'scripts'], function(){
     }
   });
 
+/**
+ * Remove this next line below if you don't want to use Jekyll.
+ */
   gulp.watch(['src/*.md', 'src/_layouts/*.html', 'src/_posts/*'], ['jekyll-rebuild']);
 
   gulp.watch('src/scss/**/*.scss', ['styles']);
