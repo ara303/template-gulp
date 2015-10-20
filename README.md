@@ -17,38 +17,39 @@ And if you want to run a static site (not required if you just want to process C
 
 ## Installation
 
-Downloading [the latest release](https://github.com/edadams/template-gulp/releases) or forking this repo is the fastest way to get the required file structure. Pay special attention to [`gulpfile.js`](https://github.com/edadams/template-gulp/blob/master/gulpfile.js).
+If you plan to publish a site, I recommend you fork and pull this GitHub repo because that'll make it easier for you to publish to GitHub Pages later. If you're not publishing, you can [download the required files](https://github.com/edadams/template-gulp/releases) instead.
 
-From where you put the files, install dependencies by running: 
+Pay special attention to [`gulpfile.js`](https://github.com/edadams/template-gulp/blob/master/gulpfile.js), that's where all the magic happens.
+
+From your project's root directory, install the dependencies by running: 
 
     npm install gulp-sass gulp-autoprefixer gulp-imagemin imagemin-pngquant gulp-concat gulp-uglify browser-sync gulp-gh-pages --save-dev 
 
-### Running without Jekyll
+### Without Jekyll
 
-If you don't want to use Jekyll as a part of this (i.e., if you just want this to compile your SCSS and stuff, you'll want to comment out the Jekyll parts of the `gulpfile.js` (annotated), and  delete `_config.yml`, `src/_includes`, `src/_layouts` and `src/index.md`. 
+If you don't want to use Jekyll as a part of this (i.e., if you just want this to compile your SCSS and other assets), you need to comment out the Jekyll parts of the `gulpfile.js` (annotated), and  delete `_config.yml`, `src/_includes`, `src/_layouts` and `src/index.md`. 
 
-In order to test your output, you'll want to create a file in `dist` called `index.html` and make sure it has the following in the `<head>`:
+Since Jekyll is what generates the HTML, you'll need to manually add an `index.html` file to `dist`. Make sure it has the following in the `<head>`:
 
     <link rel="stylsheet" href="css/application.css">
     <script src="js/application.js"></script>
-
-You need to do that so BrowserSync can automatically update those files when they change, and so that you can test your code.
 
     
 
 ## Usage
 
-Start the server by running (from your project's root):
+From the project root, start the server by running:
 
     gulp
 
+You can also type `gulp serve`, but at the bottom 
 
 
 ## Deploying 
     
 ### To GitHub Pages
 
-Make sure you're working from a `git` repository (if you've cloned this repo, you will be), and the repo has [a `gh-pages` branch](https://help.github.com/articles/creating-project-pages-manually/).
+If you've cloned from this GitHub repository, all you need to do is (if you've cloned this repo, you will be), and the repo has [a `gh-pages` branch](https://help.github.com/articles/creating-project-pages-manually/).
 
 From the project root, type:
 
@@ -56,7 +57,9 @@ From the project root, type:
 
 ### To [Surge](https://surge.sh/)
 
-Surge is my personal favoured way of deploying static sites, it's free and you can use your own domain name (you only need to pay if you want SSL), you also don't need to have your code open source which may be preferable for client sites. It's super easy to use, [you only need to install the Gulp plugin](https://surge.sh/help/getting-started-with-surge).
+Surge is my preferred way to deploy static sites. It's free and you can use your own domain name (you only need to pay if you want SSL). You also don't need to have your code open source which may be preferable for client sites.
+
+[Install and configure Surge](https://surge.sh/help/getting-started-with-surge), then from the project root, type:
 
     surge
 
