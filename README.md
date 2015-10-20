@@ -15,11 +15,13 @@ And if you want to run a static site (not required if you just want to process C
 
 ## Installation
 
-Downloading [the latest release](https://github.com/edadams/template-gulp/releases) or forking this repo is the fastest way to get the required file structure. Pay special attention to `gulpfile.js`.
+Downloading [the latest release](https://github.com/edadams/template-gulp/releases) or forking this repo is the fastest way to get the required file structure. Pay special attention to [`gulpfile.js`](https://github.com/edadams/template-gulp/blob/master/gulpfile.js).
 
 From where you put the files, install dependencies by running: 
 
     npm install gulp-sass gulp-autoprefixer gulp-imagemin imagemin-pngquant gulp-concat gulp-uglify browser-sync --save-dev 
+    
+If you don't want to use the Jekyll parts of this, you'll want to comment out the Jekyll parts of the gulpfile.js (annotated), and just delete `_config.yml`, `src/_includes`, `src/_layouts` and `index.md`.
     
 ## Usage
 
@@ -49,5 +51,6 @@ Start the server by running (from your project's root):
             example2.js
         scss/
             main.scss
+        index.md
     _config.yml
     gulpfile.js
