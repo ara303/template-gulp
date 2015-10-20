@@ -15,29 +15,29 @@ If you want to run a static site (not required if you just want to process CSS/J
 
 If you want to publish to GitHub:
 
-- Git, which you can get through installing [GitHub Desktop](https://desktop.github.com/) which installs `git` command line interface. 
+- Git, which you can get through installing [GitHub Desktop](https://desktop.github.com/) which installs `git`. 
 
-There's an alternative way to publish if you don't want to mess around with `git`, but it's worth taking the time to learn the basis of if you don't already know it.
+There's an [alternte way to publish](https://github.com/edadams/template-gulp#to-surge) if you don't want to use `git`.
 
 
 
 ## Installation
 
-If you plan to publish a site, I recommend you clone this GitHub repo because that'll make it easier for you to publish to GitHub Pages later. If you're not publishing, you need to manually [download the required files](https://github.com/edadams/template-gulp/releases).
+If you plan to publish a site, I strongly recommend you [clone this repo](https://help.github.com/articles/cloning-a-repository/) as that will make it a breeze for you to publish to GitHub Pages later. If you have GitHub Desktop, you can just click "Clone in Desktop" down the right side of this GitHub repo page.
 
-Pay special attention to [`gulpfile.js`](https://github.com/edadams/template-gulp/blob/master/gulpfile.js), that's where all the magic happens.
+If you're not publishing, you can manually [download the starter files](https://github.com/edadams/template-gulp/releases).
 
-From your project's root directory, install the dependencies by running: 
+Once you've got the project starter files, navigate to the directory where you put them. From here, install the dependencies by running: 
 
     npm install gulp-sass gulp-autoprefixer gulp-imagemin imagemin-pngquant gulp-concat gulp-uglify browser-sync gulp-gh-pages --save-dev 
 
-All future commands will be run from the project root, so remember to `cd` back there to run any further commands.
+Pay special attention to [`gulpfile.js`](https://github.com/edadams/template-gulp/blob/master/gulpfile.js), that's where all the magic happens.
 
 ### Without Jekyll
 
-If you don't want to use Jekyll as a part of this (i.e., if you just want this to compile your SCSS and other assets), you need to comment out the Jekyll parts of the `gulpfile.js` (it's annotated), and delete `_config.yml`, `src/_includes`, `src/_layouts` and `src/index.md`. 
+If you don't want to use Jekyll as a part of this (so if you only want to compile your SCSS and other assets), you need to comment out the Jekyll parts of the `gulpfile.js` (it's annotated), and delete `_config.yml`, `src/_includes`, `src/_layouts` and `src/index.md`. 
 
-Since Jekyll is what generates the HTML, you'll need to manually add an `index.html` file to `dist`. Make sure it has the following in the `<head>`:
+Since Jekyll is what generates the HTML files, you'll need to manually add an `index.html` file to `dist`. Make sure it has the following in the `<head>`:
 
     <link rel="stylsheet" href="css/application.css">
     <script src="js/application.js"></script>
@@ -56,24 +56,20 @@ While in the project root, start the server by running:
     
 ### To GitHub Pages
 
-`git` (either through installing the command line tool, or through GitHub Dekstop) is required for this.
+`git` is required for this.
 
-If you cloned this GitHub repository, type:
+From the project root, run:
 
     gulp deploy
 
-Your site will be live a few minutes after at `[your-github-name].github.io/[your-project-name]`. GitHub will email you when the site is published.
-
-If you downloaded the files manually, your project isn't a GitHub repo yet. You need to [create a repo](https://help.github.com/articles/create-a-repo/), then [clone it](https://help.github.com/articles/cloning-a-repository/). You might feel more comfortable using [GitHub Desktop](https://desktop.github.com/) to do the above, just make sure to clone your new repo into the project root you've made.
-
-Once you've done that, you can then type the above command.
+Because you cloned this repo, your project root has all the necessary files so that the `deploy` command can automatically create the `gh-pages` branch (on the first time you run the command) and publish the contents of your `dist` folder there. Your site will be live a few minutes later at `[github-username].github.io/[repo-name]`. GitHub will email you when the site is published. You can also [use your own domain name for free](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/).
 
 
 ### To [Surge](https://surge.sh/)
 
 Surge is my preferred way to deploy static sites. It's free, doesn't require `git`, and doesn't require your code be open which makes it ideal for client sites.
 
-It isn't included in the dependencies of this project by default, so you'll need to [install it](https://surge.sh/help/getting-started-with-surge). Once installed,type the following from the project root:
+It isn't included in the dependencies of this project by default, so you'll need to [install it](https://surge.sh/help/getting-started-with-surge). Once installed, run:
 
     surge
 
