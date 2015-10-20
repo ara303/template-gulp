@@ -69,7 +69,7 @@ It isn't included in the dependencies of this project by default, so you'll need
 
     surge
 
-It'll help you sign up for a Surge account (email & password) from the command line, and by default deploys to a subdomain (`[your-project].surge.sh`). It's free to [use a custom domain](https://surge.sh/help/adding-a-custom-domain name).
+It'll help you sign up for a Surge account (email & password) from the command line, and by default deploys to a `*.surge.sh` subdomain, but much like with GitHub Pages you can [use your own domain name for free](https://surge.sh/help/adding-a-custom-domain name).
 
 
 ## Base file structure
