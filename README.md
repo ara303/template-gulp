@@ -58,7 +58,7 @@ Your site will be live a few minutes after at `[your-github-name].github.io/[you
 
 If you downloaded the files manually, your project isn't a GitHub repo yet. You need to [create a repo](https://help.github.com/articles/create-a-repo/), then [clone it](https://help.github.com/articles/cloning-a-repository/). You might feel more comfortable using [GitHub Desktop](https://desktop.github.com/) to do the above, just make sure to clone your new repo into the project root you've made.
 
-Once you've done that, then you can type the above command and it'll make a `gh-pages` branch.
+Once you've done that, you can then type the above command.
 
 
 ### To [Surge](https://surge.sh/)
