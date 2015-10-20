@@ -8,7 +8,7 @@ This is an empty template Gulp.js workflow with all the file structure you need 
 - [Node.js and npm](http://nodejs.org)
 - [Gulp.js](http://gulpjs.com)
 
-And if you want to run a static site (not required if you just want to process CSS/JS/images). 
+And if you want to run a static site (not required if you just want to process CSS/JS/images):
 
 - [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
 - [Jekyll](http://jekyllrb.com)
