@@ -8,10 +8,16 @@ This is an empty template Gulp.js workflow with all the file structure you need 
 - [Node.js and npm](http://nodejs.org)
 - [Gulp.js](http://gulpjs.com)
 
-And if you want to run a static site (not required if you just want to process CSS/JS/images):
+If you want to run a static site (not required if you just want to process CSS/JS/images):
 
 - [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
 - [Jekyll](http://jekyllrb.com)
+
+If you want to publish to GitHub:
+
+- Git, which you can get through installing [GitHub Desktop](https://desktop.github.com/) which installs `git` command line interface. 
+
+There's an alternative way to publish if you don't want to mess around with `git`, but it's worth taking the time to learn the basis of if you don't already know it.
 
 
 
@@ -49,6 +55,8 @@ While in the project root, start the server by running:
 ## Deploying 
     
 ### To GitHub Pages
+
+`git` (either through installing the command line tool, or through GitHub Dekstop) is required for this.
 
 If you cloned this GitHub repository, type:
 
