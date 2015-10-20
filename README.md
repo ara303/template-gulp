@@ -13,6 +13,8 @@ And if you want to run a static site (not required if you just want to process C
 - [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
 - [Jekyll](http://jekyllrb.com)
 
+
+
 ## Installation
 
 Downloading [the latest release](https://github.com/edadams/template-gulp/releases) or forking this repo is the fastest way to get the required file structure. Pay special attention to [`gulpfile.js`](https://github.com/edadams/template-gulp/blob/master/gulpfile.js).
@@ -30,9 +32,21 @@ In order to test your output, you'll want to create a file in `dist` called `ind
     <link rel="stylsheet" href="css/application.css">
     <script src="js/application.js"></script>
 
-You need to do that so BrowserSync can automatically update those files when they change, and so that you can test your code. 
+You need to do that so BrowserSync can automatically update those files when they change, and so that you can test your code.
+
     
-### Deploying to GitHub Pages
+
+## Usage
+
+Start the server by running (from your project's root):
+
+    gulp
+
+
+
+## Deploying 
+    
+### To GitHub Pages
 
 Make sure you're working from a `git` repository (if you've cloned this repo, you will be), and the repo has [a `gh-pages` branch](https://help.github.com/articles/creating-project-pages-manually/).
 
@@ -40,17 +54,13 @@ From the project root, type:
 
     gulp deploy
 
-### Deploying to [Surge](https://surge.sh/)
+### To [Surge](https://surge.sh/)
 
-Surge is my personal favoured way of deploying static sites, it's free and you can use your own domain name (you only need to pay if you want SSL), you also don't need to have your code open source which may be preferable for client sites. It's super easy to use, you can do it in 10 seconds accoding to [Surge's documentation](https://surge.sh/help/getting-started-with-surge).
+Surge is my personal favoured way of deploying static sites, it's free and you can use your own domain name (you only need to pay if you want SSL), you also don't need to have your code open source which may be preferable for client sites. It's super easy to use, [you only need to install the Gulp plugin](https://surge.sh/help/getting-started-with-surge).
 
     surge
-    
-## Usage
 
-Start the server by running (from your project's root):
 
-    gulp
 
 ## Base file structure
 
