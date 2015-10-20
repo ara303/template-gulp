@@ -39,10 +39,12 @@ If you don't want to use Jekyll as a part of this (so if you only want to compil
 
 Since Jekyll is what generates the HTML files, you'll need to manually add an `index.html` file to `dist`. Make sure it has the following in the `<head>`:
 
-    <link rel="stylsheet" href="css/application.css">
-    <script src="js/application.js"></script>
-
+````html
+<link rel="stylsheet" href="css/application.css">
+<script src="js/application.js"></script>
+````
     
+
 
 ## Usage
 
