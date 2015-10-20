@@ -8,6 +8,7 @@ var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var cp = require('child_process');
+var ghPages = require('gulp-gh-pages');
 
 gulp.task('styles', function(){
   gulp.src('src/scss/**/*.scss')
@@ -37,7 +38,7 @@ gulp.task('scripts', function(){
 /**
  * Remove this if you don't want to use Jekyll.
  */
-gulp.task('jekyll-build', function (done) {
+gulp.task('jekyll-build', function(done){
   browserSync.notify('Jekyll running...');
   return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
     .on('close', done);
@@ -46,7 +47,7 @@ gulp.task('jekyll-build', function (done) {
 /**
  * Remove this if you don't want to use Jekyll.
  */
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+gulp.task('jekyll-rebuild', ['jekyll-build'], function(){
     browserSync.reload();
 });
 
@@ -72,6 +73,11 @@ gulp.task('serve', ['jekyll-build', 'styles', 'images', 'scripts'], function(){
   gulp.watch('src/js/**/*', ['scripts']);
 
   gulp.watch(['*.html', 'img/**/*', 'css/**/*.css', 'js/**/*.js'], {cwd: 'dist'}, reload);
+});
+
+gulp.task('deploy', function(){
+  gulp.src('dist/**/*')
+    .pipe(ghPages());
 });
 
 gulp.task('default', ['serve']);

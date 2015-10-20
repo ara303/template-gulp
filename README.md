@@ -19,9 +19,32 @@ Downloading [the latest release](https://github.com/edadams/template-gulp/releas
 
 From where you put the files, install dependencies by running: 
 
-    npm install gulp-sass gulp-autoprefixer gulp-imagemin imagemin-pngquant gulp-concat gulp-uglify browser-sync --save-dev 
+    npm install gulp-sass gulp-autoprefixer gulp-imagemin imagemin-pngquant gulp-concat gulp-uglify browser-sync gulp-gh-pages --save-dev 
+
+### Running without Jekyll
+
+If you don't want to use Jekyll as a part of this (i.e., if you just want this to compile your SCSS and stuff, you'll want to comment out the Jekyll parts of the `gulpfile.js` (annotated), and  delete `_config.yml`, `src/_includes`, `src/_layouts` and `src/index.md`. 
+
+In order to test your output, you'll want to create a file in `dist` called `index.html` and make sure it has the following in the `<head>`:
+
+    <link rel="stylsheet" href="css/application.css">
+    <script src="js/application.js"></script>
+
+You need to do that so BrowserSync can automatically update those files when they change, and so that you can test your code. 
     
-If you don't want to use the Jekyll parts of this, you'll want to comment out the Jekyll parts of the gulpfile.js (annotated), and just delete `_config.yml`, `src/_includes`, `src/_layouts` and `index.md`.
+### Deploying to GitHub Pages
+
+Make sure you're working from a `git` repository (if you've cloned this repo, you will be), and the repo has [a `gh-pages` branch](https://help.github.com/articles/creating-project-pages-manually/).
+
+From the project root, type:
+
+    gulp deploy
+
+### Deploying to [Surge](https://surge.sh/)
+
+Surge is my personal favoured way of deploying static sites, it's free and you can use your own domain name (you only need to pay if you want SSL), you also don't need to have your code open source which may be preferable for client sites. It's super easy to use, you can do it in 10 seconds accoding to [Surge's documentation](https://surge.sh/help/getting-started-with-surge).
+
+    surge
     
 ## Usage
 
@@ -29,7 +52,7 @@ Start the server by running (from your project's root):
 
     gulp
 
-## Required file structure
+## Base file structure
 
     dist/
         css/
