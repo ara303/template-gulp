@@ -17,7 +17,7 @@ If you want to publish to GitHub:
 
 - Git, which you can get through installing [GitHub Desktop](https://desktop.github.com/) which installs `git`. 
 
-There's an [alternte way to publish](https://github.com/edadams/template-gulp#to-surge) if you don't want to use `git`.
+There's an [alternate way to publish](https://github.com/edadams/template-gulp#to-surge) if you don't want to use `git`.
 
 
 
@@ -69,13 +69,13 @@ Because you cloned this repo, your project root has all the necessary files so t
 
 ### To [Surge](https://surge.sh/)
 
-Surge is my preferred way to deploy static sites. It's free, doesn't require `git`, and doesn't require your code be open which makes it ideal for client sites.
+Surge is my preferred way to deploy static sites. It's free, offers all the same features as GitHub Pages, and doesn't require your code be open which makes it ideal for client sites. It also doesn't require `git`.
 
 It isn't included in the dependencies of this project by default, so you'll need to [install it](https://surge.sh/help/getting-started-with-surge). Once installed, run:
 
     surge
 
-It'll help you sign up for a Surge account (email & password) from the command line, and by default deploys to a `*.surge.sh` subdomain, but much like with GitHub Pages you can [use your own domain name for free](https://surge.sh/help/adding-a-custom-domain name).
+It'll help you sign up for a Surge account (email & password) from the command line, and by default deploys to a `.surge.sh` subdomain, but much like with GitHub Pages you can [use your own domain name for free](https://surge.sh/help/adding-a-custom-domain name).
 
 
 ## Base file structure
