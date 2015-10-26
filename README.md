@@ -73,9 +73,9 @@ Surge is my preferred way to deploy static sites. It's free, offers all the same
 
 It isn't included in the dependencies of this project by default, so you'll need to [install it](https://surge.sh/help/getting-started-with-surge). Once installed, run:
 
-    surge
+    surge dist
 
-It'll help you sign up for a Surge account (email & password) from the command line, and by default deploys to a `.surge.sh` subdomain, but much like with GitHub Pages you can [use your own domain name for free](https://surge.sh/help/adding-a-custom-domain name).
+(Typing `dist` tells it to just upload your compiled site, otherwise it'll upload everything.) It'll help you sign up for a Surge account (email & password) from the command line, and by default deploys to a `.surge.sh` subdomain, but much like with GitHub Pages you can [use your own domain name for free](https://surge.sh/help/adding-a-custom-domain name).
 
 
 ## Base file structure
