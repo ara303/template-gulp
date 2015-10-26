@@ -12,7 +12,7 @@ var ghPages = require('gulp-gh-pages');
 
 gulp.task('styles', function(){
   gulp.src('src/scss/**/*.scss')
-    .pipe(sass({ outputStyle: 'compressed' }))
+    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
     .pipe(gulp.dest('dist/css'))
     .pipe(reload({ stream: true }));
