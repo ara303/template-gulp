@@ -1,21 +1,7 @@
 {
   "name": "template-gulp",
   "version": "1.2.0",
-  "description": "Collection of useful Gulp modules for a front-end developer to get started.",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/edadams/template-gulp"
-  },
-  "author": "Ed Adams",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/edadams/template-gulp/issues"
-  },
-  "homepage": "https://github.com/edadams/template-gulp",
+  "description": "A collection of useful Gulp modules to help a front-end developer get started.",
   "dependencies": {
     "browser-sync": "^2.9.12",
     "gulp-autoprefixer": "^3.1.0",
