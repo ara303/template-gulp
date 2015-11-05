@@ -1,5 +1,9 @@
 # template-gulp
-This is an empty template Gulp.js workflow with all the file structure you need to get started with Gulp.js and a number of it's plugins. This uses SCSS with Autoprefixer, concat and minify JS, BrowserSync for automatic page refreshing, and Jekyll to generate a static site or blog.
+![npm dependencies](https://david-dm.org/edadams/template-gulp.svg)
+
+Example Gulp.js recipe with all the file structure you need to get started with Gulp.js and a number of the most helpful modules for a front-end developer.
+
+This uses SCSS with Autoprefixer, minify and concat for JS, BrowserSync for automatic page refreshing, and Jekyll to generate a static site or blog, with more too (optionally).
 
 [I've written a detailed blog article about how to install and use this if it's your first time working with Gulp](http://blog.edada.ms/post/131510136177/getting-started-gulp-js).
     
