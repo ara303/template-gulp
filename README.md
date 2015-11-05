@@ -107,3 +107,4 @@ It isn't included in the dependencies of this project by default, so you'll need
         index.md
     _config.yml
     gulpfile.js
+    package.json
