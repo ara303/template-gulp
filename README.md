@@ -1,7 +1,7 @@
 # template-gulp
 ![npm dependencies](https://david-dm.org/edadams/template-gulp.svg)
 
-Example Gulp.js recipe with all the file structure you need to get started with Gulp.js and a number of the most helpful modules for a front-end developer.
+Example Gulp.js workflow with all the file structure you need to get started with Gulp.js and a number of the most helpful modules for a front-end developer.
 
 This uses SCSS with Autoprefixer, minify and concat for JS, BrowserSync for automatic page refreshing, and Jekyll to generate a static site or blog, with more too (optionally).
 
