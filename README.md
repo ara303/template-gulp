@@ -5,7 +5,7 @@ Example Gulp.js workflow with all the file structure you need to get started wit
 
 This uses SCSS with Autoprefixer, minify and concat for JS, BrowserSync for automatic page refreshing, and Jekyll to generate a static site or blog, with more too (optionally).
 
-[I've written a detailed blog article about how to install and use this if it's your first time working with Gulp](http://blog.edada.ms/post/131510136177/getting-started-gulp-js).
+[I've written a detailed blog article about how to install and use this if it's your first time working with Gulp](http://edadamsblog.tumblr.com/post/131510136177/getting-started-gulp-js).
     
 ## Prerequisites
 
